@@ -2,6 +2,7 @@ package rdf.game.medievalbattletouchproto;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
@@ -12,12 +13,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+		
 		// --------------------------------------------
 		TextView play = (TextView) findViewById(R.id.button_play);
 		play.setOnClickListener(new OnClickListener() {
@@ -70,6 +71,11 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
 	}
 
 }
