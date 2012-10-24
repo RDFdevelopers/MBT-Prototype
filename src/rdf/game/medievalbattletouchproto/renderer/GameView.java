@@ -38,12 +38,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 		getHolder().addCallback(this);
 	}
 
-	@Override
 	public void surfaceChanged(SurfaceHolder holder, int format, int width,
 			int height) {
 	}
 
-	@Override
 	public void surfaceCreated(SurfaceHolder holder) {
 		playerIzda = new Guerrero(new Coordenada(50, getHeight() / 2 - 50), 50, 50,"ROJO");
 		playerDcha = new Guerrero(new Coordenada(getWidth() - 70, getHeight() / 2 - 50), 50, 50, "AMARILLO");
@@ -58,7 +56,6 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 		//bolaThread.start();
 	}
 
-	@Override
 	public void surfaceDestroyed(SurfaceHolder arg0) {
 		boolean retry = true;
 		renderer.setRunning(false);

@@ -22,7 +22,6 @@ public class MainActivity extends Activity {
 		TextView play = (TextView) findViewById(R.id.button_play);
 		play.setOnClickListener(new OnClickListener() {
 
-			@Override
 			public void onClick(View v) {
 				Toast.makeText(getApplicationContext(), R.string.menu_play,
 						Toast.LENGTH_SHORT).show();
@@ -32,7 +31,6 @@ public class MainActivity extends Activity {
 
 		TextView options = (TextView) findViewById(R.id.button_options);
 		options.setOnClickListener(new OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				Toast.makeText(getApplicationContext(), R.string.menu_options,
 						Toast.LENGTH_SHORT).show();
@@ -41,7 +39,6 @@ public class MainActivity extends Activity {
 
 		TextView exit = (TextView) findViewById(R.id.button_exit);
 		exit.setOnClickListener(new OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				Toast.makeText(getApplicationContext(), R.string.menu_exit,
 						Toast.LENGTH_SHORT).show();
@@ -50,7 +47,6 @@ public class MainActivity extends Activity {
 
 		ImageView logo = (ImageView) findViewById(R.id.imageView2);
 		logo.setOnClickListener(new OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				Intent viewIntent = new Intent("android.intent.action.VIEW",
 						Uri.parse("https://github.com/RDFdevelopers"));

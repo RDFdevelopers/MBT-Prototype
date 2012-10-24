@@ -89,7 +89,6 @@ public class Bola extends Unidad implements IUnidad {
 		}
 	}
 
-	@Override
 	public void move(int x, int y) {
 		switch(direccion) {
 		case DCHA_ARRIBA:
@@ -111,7 +110,6 @@ public class Bola extends Unidad implements IUnidad {
 		}
 	}
 
-	@Override
 	public void animacion(int x, int y) {
 		// TODO Auto-generated method stub
 		
