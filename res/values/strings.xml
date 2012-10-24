@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">MedievalBattleTouchProto</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Registro</string>
+    <string name="menu_play">Jugar</string>
+    <string name="menu_options">Opciones</string>
+    <string name="menu_exit">Salir</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button2">Button 2</string>
+    <string name="dummy_button1">Button 1</string>
+    <string name="title_activity_game">GameActivity</string>
+
+</resources>
